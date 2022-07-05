@@ -1,0 +1,124 @@
+
+{
+ "movies":[
+
+    {    
+        "id": 1,
+        "Title": "Back to the Future",
+        "Year": "1985",
+        "Rated": "PG",
+        "Released": "03 Jul 1985",
+        "Runtime": "116 min",
+        "Genre": "Adventure, Comedy, Sci-Fi",
+        "Director": "Robert Zemeckis",
+        "Writer": "Robert Zemeckis, Bob Gale",
+        "Actors": "Michael J. Fox, Christopher Lloyd, Lea Thompson",
+        "Plot": "Marty McFly, a 17-year-old high school student, is accidentally sent thirty years into the past in a time-traveling DeLorean invented by his close friend, the eccentric scientist Doc Brown.",
+        "Language": "English",
+        "Country": "United States",
+        "Awards": "Won 1 Oscar. 22 wins & 25 nominations total",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BZmU0M2Y1OGUtZjIxNi00ZjBkLTg1MjgtOWIyNThiZWIwYjRiXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
+        "Ratings": [
+            {
+                "Source": "Internet Movie Database",
+                "Value": "8.5/10"
+            },
+            {
+                "Source": "Rotten Tomatoes",
+                "Value": "96%"
+            },
+            {
+                "Source": "Metacritic",
+                "Value": "87/100"
+            }
+        ],
+        "Metascore": "87",
+        "imdbRating": "8.5",
+        "imdbVotes": "1,168,453",
+        "imdbID": "tt0088763",
+        "Type": "movie",
+        "DVD": "17 Aug 2010",
+        "BoxOffice": "$212,836,762",
+        "Production": "N/A",
+        "Website": "N/A",
+        "Response": "True"
+    },
+
+    {   
+        "id":2,
+        "Title": "The Lost City of Z",
+        "Year": "2016",
+        "Rated": "PG-13",
+        "Released": "21 Apr 2017",
+        "Runtime": "141 min",
+        "Genre": "Adventure, Biography, Drama",
+        "Director": "James Gray",
+        "Writer": "James Gray, David Grann",
+        "Actors": "Charlie Hunnam, Robert Pattinson, Sienna Miller",
+        "Plot": "A true-life drama, centering on British explorer Major Percival Fawcett, who disappeared whilst searching for a mysterious city in the Amazon in the 1920s.",
+        "Language": "English, Portuguese, Tupi, Spanish, German",
+        "Country": "United States",
+        "Awards": "6 wins & 31 nominations",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BNjAyN2QxOTItOGQ0YS00NmQxLWIxMjEtMDdkZmY0NDU5OWUzXkEyXkFqcGdeQXVyMTk1MDM0OTc@._V1_SX300.jpg",
+        "Ratings": [
+            {
+                "Source": "Internet Movie Database",
+                "Value": "6.6/10"
+            },
+            {
+                "Source": "Rotten Tomatoes",
+                "Value": "87%"
+            },
+            {
+                "Source": "Metacritic",
+                "Value": "78/100"
+            }
+        ],
+        "Metascore": "78",
+        "imdbRating": "6.6",
+        "imdbVotes": "89,586",
+        "imdbID": "tt1212428",
+        "Type": "movie",
+        "DVD": "11 Jul 2017",
+        "BoxOffice": "$8,580,410",
+        "Production": "Amazon Studios/Bleecker Street Media",
+        "Website": "N/A",
+        "Response": "True"
+    },
+
+
+    
+        {
+            "id": 3,
+            "Title": "Camelot",
+            "Year": "2011",
+            "Rated": "TV-MA",
+            "Released": "25 Feb 2011",
+            "Runtime": "45 min",
+            "Genre": "Drama, Fantasy, History",
+            "Director": "N/A",
+            "Writer": "Chris Chibnall, Michael Hirst",
+            "Actors": "Joseph Fiennes, Jamie Campbell Bower, Tamsin Egerton",
+            "Plot": "When King Uther dies and Britain faces chaos, Merlin presents an unknown named Arthur as the new king by birthright, as the late king's son, against the ambitious desires of his half-sister, Morgan.",
+            "Language": "English",
+            "Country": "Ireland, United States, United Kingdom, Canada",
+            "Awards": "Nominated for 1 Primetime Emmy. 13 nominations total",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BMTU1NDMxMjI1OV5BMl5BanBnXkFtZTcwNzQ4MjQ1NA@@._V1_SX300.jpg",
+            "Ratings": [
+                {
+                    "Source": "Internet Movie Database",
+                    "Value": "6.5/10"
+                }
+            ],
+            "Metascore": "N/A",
+            "imdbRating": "6.5",
+            "imdbVotes": "23,871",
+            "imdbID": "tt1672189",
+            "Type": "series",
+            "totalSeasons": "1",
+            "Response": "True"
+        }
+    
+ ]
+
+}
