@@ -8,12 +8,13 @@ function MoviesContainer({movies, addMyFavoriteMovie}) {
     
   return (
     <div>MoviesContainer
-{movies.map((movie) => {
+{movies.map((movie) => 
 
-   return  <MovieCard key= {movie.id} movie= {movie} handleAddMovieCard={addMyFavoriteMovie}/>
-})}
+     <MovieCard key= {movie.id} movie= {movie} handleAddMovieCard={addMyFavoriteMovie}/>
+)}
     </div>
   )
 }
+
 
 export default MoviesContainer 

@@ -3,6 +3,7 @@ import MoviesContainer from './MoviesContainer'
 import MovieFavorite from './MovieFavorite'
 
 
+
 function MovieHome() {
 
     const[movies, setMovie] = useState([])
@@ -12,7 +13,7 @@ function MovieHome() {
 
     useEffect(()=> {
     
-      fetch("http://localhost:3001/movies")
+      fetch("http://localhost:3500/movies")
       .then((r) => r.json())
     
        .then((json) => {

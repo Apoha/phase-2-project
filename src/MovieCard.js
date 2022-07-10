@@ -28,7 +28,7 @@ console.log(movieKeys)
     <p>Awards {movie.Awards}</p>
     <img src= {movie.Poster} alt={"Poster of the Movie"}/>
    <p>Ratings {movie.Ratings.map((rating, index)  => {
-    return <Ratings key= {index} source={rating.Source} value={rating.Value}/>
+    return <Ratings key={index} source={rating.Source} value={rating.Value}/>
     })} </p>
     <p>Metascore {movie.Metascore}</p>
     <p>imdbRating {movie.imdbRating}</p>
