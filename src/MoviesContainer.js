@@ -3,6 +3,7 @@ import MovieCard from './MovieCard'
 
 
 
+
 function MoviesContainer({movies, addMyFavoriteMovie}) {
 
     

@@ -1,7 +1,11 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
-
+//import {Switch, Route}  from "react-router-dom";
+import { Route, Routes } from 'react-router-dom';
 import MovieHome from './MovieHome';
+import MoviesContainer from './MoviesContainer';
+import MovieFavorite from './MovieFavorite';
+import NavBar from './NavBar';
 
 function App() {
 
@@ -20,10 +24,25 @@ function App() {
 // }
 // ,[])
 
+
+const[page, setPage] = useState('/')
   
   return (
     <div className="App">
-      <MovieHome />
+<NavBar onChangePage = {setPage}/>
+<Routes>
+
+< Route path ="/" />
+<MovieHome />
+<Route/>
+<Route path = "/MoviesContainer">
+  <MoviesContainer/>
+</Route>
+<Route path = "/MovieFavorite">
+  <MovieFavorite/>
+</Route>
+     
+</Routes>      
     </div>
   );
 }
