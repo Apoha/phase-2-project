@@ -7,12 +7,12 @@ function NavBar() {
 
   return (
 
-    <div>NavBar
+    <div>
 
 <nav>
             <Link to ="/">MovieHome</Link>
-            <Link to="/about">MoviesContainer</Link>
-            <Link to="/projects">MovieFavorite</Link>
+            <Link to="/MoviesContainer">MoviesContainer</Link>
+            <Link to="/MovieFavorite">MovieFavorite</Link>
         </nav>
 
     </div>

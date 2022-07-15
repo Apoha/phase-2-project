@@ -1,16 +1,15 @@
 import React from 'react'
 import MovieCard from './MovieCard'
 
-function MovieFavorite({favoriteMovie, addMyFavoriteMovie}) {
+function MovieFavorite({favoriteMovie}) {
 
 
   
 
   return (
-    <div >MovieCard
-{favoriteMovie.map((movie) => <MovieCard key= {movie.id} favoriteMovie= {favoriteMovie} handleAddMovieCard={addMyFavoriteMovie}/>)}
-
-    </div>
+    <div>My Favorite Movies
+{favoriteMovie.map((movie) => <MovieCard key= {movie.id} movie={movie}/>)}
+  </div>
 
 
   )

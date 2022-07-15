@@ -7,15 +7,17 @@ import MovieCard from './MovieCard'
 function MoviesContainer({movies, addMyFavoriteMovie}) {
 
     
+  
   return (
-    <div>MoviesContainer
+    <div className="movieContainer"> MoviesContainer
 {movies.map((movie) => 
-
-     <MovieCard key= {movie.id} movie= {movie} handleAddMovieCard={addMyFavoriteMovie}/>
-)}
-    </div>
+{
+  return (<MovieCard key= {movie.id} movie= {movie} handleAddMovieCard={addMyFavoriteMovie}/>)
+  }
+)
+}
+  </div>
   )
 }
-
 
 export default MoviesContainer 
