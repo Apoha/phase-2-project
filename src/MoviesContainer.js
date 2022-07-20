@@ -4,7 +4,7 @@ import MovieCard from './MovieCard'
 
 
 
-function MoviesContainer({movies, addMyFavoriteMovie}) {
+function MoviesContainer({movies, addMyFavoriteMovie, deleteFavoriteMovie}) {
 
     
   
@@ -12,7 +12,7 @@ function MoviesContainer({movies, addMyFavoriteMovie}) {
     <div className="movieContainer"> MoviesContainer
 {movies.map((movie) => 
 {
-  return (<MovieCard key= {movie.id} movie= {movie} handleAddMovieCard={addMyFavoriteMovie}/>)
+  return (<MovieCard key= {movie.id} movie= {movie} handleAddMovieCard={addMyFavoriteMovie} handleDeleteMovieCard={deleteFavoriteMovie}/>)
   }
 )
 }

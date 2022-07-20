@@ -19,6 +19,12 @@ function App() {
   }
 
 
+  function deleteFavoriteMovie(deleteMovie) {
+
+    const updatedMovie = movies.filter((movie) => movie.id !== deleteMovie.id);
+    setMovie(updatedMovie);
+  }
+
 
 
   useEffect(() => {
@@ -44,10 +50,10 @@ function App() {
         < Route path="/" element={<MovieHome />} />
 
         <Route />
-        <Route path="/MoviesContainer" element={<MoviesContainer movies={movies}  addMyFavoriteMovie={addMyFavoriteMovie}/>}>
+        <Route path="/MoviesContainer" element={<MoviesContainer movies={movies}  addMyFavoriteMovie={addMyFavoriteMovie} deleteFavoriteMovie={deleteFavoriteMovie}/>}>
 
         </Route>
-        <Route path="/MovieFavorite" element={<MovieFavorite favoriteMovie={favoriteMovie} />}>
+        <Route path="/MovieFavorite" element={<MovieFavorite favoriteMovie={favoriteMovie} addMyFavoriteMovie={addMyFavoriteMovie} deleteFavoriteMovie={deleteFavoriteMovie}/>}>
 
         </Route>
 

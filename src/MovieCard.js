@@ -2,7 +2,7 @@ import React from 'react'
 import Ratings from './Ratings'
 
 
-function MovieCard({movie, handleAddMovieCard}) {
+function MovieCard({movie, handleAddMovieCard, handleDeleteMovieCard}) {
 
 //const movieKeys = Object.keys(movie)
 
@@ -41,6 +41,20 @@ function MovieCard({movie, handleAddMovieCard}) {
     <p>Website {movie.Website}</p>
     <p>Response {movie.Response}</p>
     {/* {movieKeys} */}
+    <span>
+              <div className="delete button">
+                <button
+                  className="mini button"
+                  onClick={(e) =>{
+                    e.stopPropagation()
+                    handleDeleteMovieCard(movie.id)
+                  }
+                 }
+                >
+                  x
+                </button>
+              </div>
+            </span>
     
     </div>
   )
