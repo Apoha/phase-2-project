@@ -1,5 +1,6 @@
 import React from 'react'
 import Ratings from './Ratings'
+import Reviews from './Reviews'
 
 
 function MovieCard({movie, handleAddMovieCard, handleDeleteMovieCard}) {
@@ -27,9 +28,9 @@ function MovieCard({movie, handleAddMovieCard, handleDeleteMovieCard}) {
     <p>Country {movie.Country}</p>
     <p>Awards {movie.Awards}</p>
     <img src= {movie.Poster} alt={"Poster of the Movie"}/>
-   <p>Ratings</p> {movie.Ratings.map((rating, index)  => {
+   {/* <p>Ratings</p> {movie.Ratings.map((rating, index)  => {
     return <Ratings key={index} source={rating.Source} value={rating.Value}/>
-    })} 
+    })}  */}
     <p>Metascore {movie.Metascore}</p>
     <p>imdbRating {movie.imdbRating}</p>
     <p>imdbVotes {movie.imdbVotes}</p>
@@ -55,7 +56,7 @@ function MovieCard({movie, handleAddMovieCard, handleDeleteMovieCard}) {
                 </button>
               </div>
             </span>
-    
+    { <Reviews/>}
     </div>
   )
 }

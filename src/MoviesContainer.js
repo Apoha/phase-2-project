@@ -6,8 +6,6 @@ import MovieCard from './MovieCard'
 
 function MoviesContainer({movies, addMyFavoriteMovie, deleteFavoriteMovie}) {
 
-    
-  
   return (
     <div className="movieContainer"> MoviesContainer
 {movies.map((movie) => 

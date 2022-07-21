@@ -21,6 +21,9 @@ function MovieHome() {
     // }
     // ,[])
 
+    // const moviesUpdate = (movie) => {
+    //   setMovie([...movies, movie])
+    // }
 
 
     // function addMyFavoriteMovie(movie) {
@@ -30,7 +33,7 @@ function MovieHome() {
 
 
   return (
-    <div className="movieName"> <h1>Welcome to Movie Wolrd !</h1>
+    <div className="movieName">
     <img src="https://n6s6b6w9.stackpathcdn.com/client/w_700,ret_wait/https://appgrooves.com/cdn/mc/GAME_TRIVIA/11_w730.jpg" 
     alt="World Movies" 
     width="750"/>

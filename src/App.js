@@ -6,7 +6,7 @@ import MovieHome from './MovieHome';
 import MoviesContainer from './MoviesContainer';
 import MovieFavorite from './MovieFavorite';
 import NavBar from './NavBar';
-
+//import Reviews from './Reviews';
 function App() {
 
   const [favoriteMovie, setFavoriteMovie] = useState([])
@@ -27,6 +27,8 @@ function App() {
 
 
 
+
+
   useEffect(() => {
 
     fetch("http://localhost:3500/movies")
@@ -41,10 +43,16 @@ function App() {
     , [])
 
 
+
+    // const moviesUpdate = (movie) => {
+    //   setMovie([...movies, movie])
+    // }
+
+
   const [page, setPage] = useState('/')
 
   return (
-    <div className="App">
+    <div className="App">  <h1>Welcome to Movie Wolrd !</h1>
       <NavBar onChangePage={setPage} />
       <Routes>
         < Route path="/" element={<MovieHome />} />
@@ -56,7 +64,8 @@ function App() {
         <Route path="/MovieFavorite" element={<MovieFavorite favoriteMovie={favoriteMovie} addMyFavoriteMovie={addMyFavoriteMovie} deleteFavoriteMovie={deleteFavoriteMovie}/>}>
 
         </Route>
-
+        {/* <Route path="/Reviews" element={<Reviews moviesUpdate={moviesUpdate} />}>
+        </Route> */}
       </Routes>
     </div>
   );
